@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #6785c7;
+}
+
+.wrapper{
+    width: 380px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 40px 30px 50px 30px;
+}
+
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.wrapper form{
+    margin: 40px 0;
+}
+
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field .shake{
+    animation: shake 0.3s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% ,100%{
+        margin-left:0;
+    }
+    20% , 80%{
+        margin-left: -12px;
+    }
+    40% ,60%{
+        margin-left: 12px;
+    }
+}
+
+form .field .input-area{
+    position: relative;
+}
+
+form input{
+    height: 50px;
+    width: 100%;
+    padding: 0 45px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #bfbffb;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    border-top-width: 1px;
+}
+
+form input::placeholder{
+    color: #bfbffb;
+    font-size: 17px;
+}
+
+form .field i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field .icon{
+    left: 15px;
+    color: #bfbffb;
+}
+
+form .field .error-icon{
+    right: 15px;
+    color: #ff0000;
+}
+
+form .field .error-msg{
+    color: #ff0000;
+    margin-top: 5px;
+    text-align: left;
+}
+
+form .pass-link{
+    text-align: center;
+}
+
+form .field .error{
+    display: none;
+}
+
+.wrapper a{
+    color: #73c5e8;
+    text-decoration: none;
+}
+
+form input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: #6785c7;
+}
+
+input[type="submit"]:hover{
+    background: #2e4ead;
+}
+
