@@ -11,12 +11,12 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #6785c7;
+    background: #c7a244;
 }
 
 .wrapper{
     width: 380px;
-    background: #fff;
+    background: #cdc36a;
     border-radius: 5px;
     padding: 40px 30px 50px 30px;
 }
@@ -35,8 +35,8 @@ form .field{
     margin-bottom: 20px;
 }
 
-form .field .shake{
-    animation: shake 0.3s ease-in-out infinite;
+form .field.shake{
+    animation: shake 0.3s ease-in-out 1;
 }
 
 @keyframes shake {
@@ -82,12 +82,17 @@ form .field i{
 
 form .field .icon{
     left: 15px;
-    color: #bfbffb;
+    color: #9f9ff5;
 }
 
 form .field .error-icon{
     right: 15px;
     color: #ff0000;
+}
+
+form .field.error .error{
+    display: block;
+    font-size: 15px;
 }
 
 form .field .error-msg{
@@ -114,10 +119,10 @@ form input[type="submit"]{
     border: none;
     color: #fff;
     cursor: pointer;
-    background: #6785c7;
+    background: #9b9c51;
 }
 
 input[type="submit"]:hover{
-    background: #2e4ead;
+    background: #d0d546;
 }
 
